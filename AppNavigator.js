@@ -1,5 +1,6 @@
 // Navigation.js
 import React from 'react';
+import { View } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -24,6 +25,7 @@ const AppTabs = () => (
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="magnify" color={color} size={size} />
         ),
+        headerShown: false,
       }}
     />
     <Tab.Screen
@@ -34,6 +36,7 @@ const AppTabs = () => (
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="chat" color={color} size={size} />
         ),
+        headerShown: false,
       }}
     />
     <Tab.Screen
