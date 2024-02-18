@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen';
 import ExploreScreen from './screens/ExploreScreen';
 import ChatScreen from './screens/ChatScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import LikeScreen from './screens/LikeScreen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Tab = createBottomTabNavigator();
@@ -19,7 +20,7 @@ const AppTabs = () => (
       name="Explore"
       component={ExploreScreen}
       options={{
-        tabBarLabel: 'Chat',
+        tabBarLabel: 'Explore',
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="magnify" color={color} size={size} />
         ),
@@ -47,7 +48,7 @@ const AppTabs = () => (
     />
     <Tab.Screen
       name="Like"
-      component={HomeScreen}
+      component={LikeScreen}
       options={{
         tabBarLabel: 'Like',
         tabBarIcon: ({ color, size }) => (
